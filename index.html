@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Damien Liew | Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Damien Liew, Diploma in Immersive Media &amp; Game Development student at Temasek Polytechnic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav__brand" href="#home">Damien Liew</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+        <h1 class="hero__title">Damien Liew</h1>
+        <p class="hero__subtitle">Diploma in Immersive Media &amp; Game Development, Temasek Polytechnic</p>
+        <p class="hero__text">I am a student interested in game development, software development and technology. I enjoy building things hands-on, from Unity gameplay systems to AR experiences, and I am looking for internship opportunities.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--secondary" href="assets/documents/Resume.docx" download="Damien-Liew-Resume.pdf">Download resume</a>
+        </div>
+        <ul class="social-list">
+          <li><a class="social-list__link" href="https://github.com/liewdamien22-a11y2" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <!-- TODO: replace with your verified LinkedIn profile URL -->
+          <li><a class="social-list__link" href="www.linkedin.com/in/damien-liew-b10260378" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+        </div>
+        <img class="hero__photo" src="assets/images/profile-placeholder.svg" alt="Placeholder for a photo of Damien Liew" width="360" height="440">
+      </div>
+    </section>
+
+  <section class="section section--alt" id="about">
+      <div class="container container--narrow">
+        <h2 class="section__title">About Me</h2>
+        <ul class="about__list">
+          <li><strong>Education:</strong> I'm currently pursuing a Diploma in Immersive Media &amp; Game Development at Temasek Polytechnic, where I'm developing skills in immersive media and game development.</li>
+          <li><strong>Learning Through Building:</strong> I enjoy a hands-on approach to learning, applying what I learn by taking on projects. I believe building things is one of the best ways to develop practical skills and explore new ideas.</li>
+          <li><strong>Interests &amp; Opportunities:</strong> My interests include game development, VR/AR and artificial intelligence. I'm always eager to explore emerging technologies, take on new challenges and pursue opportunities to grow.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <img class="card__img" src="assets/images/project_kunai_render.png" alt="Placeholder image for the KUNAI project" width="640" height="360" loading="lazy">
+            <div class="card__body">
+              <p class="badge badge--progress">Hiatus</p>
+              <h3 class="card__title"><a class="card__link" href="personal_project.html">KUNAI</a></h3>
+              <p class="card__text">Ongoing personal Unity FPS project involving fast-paced movement, kunai-based teleportation mechanics and custom 3D assets.</p>
+              <ul class="tags"><li>Unity</li><li>C#</li><li>Blender</li></ul>
+              <p class="card__links"><span class="link-placeholder">Repository link: https://github.com/liewdamien22-a11y/project_kunai</span></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/images/oneless_screenshot.png" alt="Placeholder image for the AI-gnition: One Less Thing project" width="640" height="360" loading="lazy">
+            <div class="card__body">
+              <p class="badge badge--concept">Concept</p>
+              <h3 class="card__title"><a class="card__link" href="ai-gnition-project.html">AI-gnition: One Less Thing</a></h3>
+              <p class="card__text">Hackathon productivity and time-management application concept exploring AI-assisted task management. This is a proposal, not a finished product.</p>
+              <ul class="tags"><li>IBM Bob</li><li>Task management</li><li>Application design</li></ul>
+              <p class="card__links"><span class="link-placeholder">Project link: https://github.com/liewdamien22-a11y/Oneless-Task-Manager</span></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="" alt="Work in progress" width="640" height="360" loading="lazy">
+            <div class="card__body">
+              <p class="badge badge--design">Design phase</p>
+              <h3 class="card__title"><a class="card__link" href="igd-ar-project.html">IGD AR Course Brochure</a></h3>
+              <p class="card__text">Academic AR project designed to explain Temasek Polytechnic's IGD curriculum through an interactive AR mobile experience.</p>
+              <ul class="tags"><li>Unity</li><li>AR Foundation</li></ul>
+              <p class="card__links"><span class="link-placeholder">Currently in: Design Phase</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="experience">
+      <div class="container container--narrow">
+        <h2 class="section__title">Experience and Achievements</h2>
+        <ul class="timeline">
+          <li class="timeline__item">
+            <h3 class="timeline__title">Part-time staff, Ya Kun International</h3>
+            <p class="timeline__meta">January to April 2025</p>
+            <p class="timeline__meta">provided customer service in F&B environment</p>
+            <p class="timeline__meta">Perform end-of-day financial reports </p>
+            <!-- TODO: add 1-2 lines on your real responsibilities -->
+          </li>
+          <li class="timeline__item">
+            <h3 class="timeline__title">Secretary / Main Committee, Temasek Polytechnic MindSports Club</h3>
+            <p class="timeline__meta">2026</p>
+            <p class="timeline__meta">Managed club attendance records, member registrations, and supported member engagement</p>
+            <p class="timeline__meta">Collaborated with Main Committee members on event planning, club decisions, recruitment, onboarding, and committee handover</p>
+            <!-- TODO: add 1-2 lines on your real responsibilities -->
+          </li>
+          <li class="timeline__item">
+            <h3 class="timeline__title">Edusave Certificate of Academic Achievement and Edusave Merit Bursary</h3>
+            <p class="timeline__meta">2026</p>
+            <p class="timeline__meta">received recognition for scoring among top 25% in course and cohort </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="grid grid--skills">
+          <div class="card card--pad">
+            <h3 class="card__title">Development</h3>
+            <ul class="tags"><li>C#</li><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </div>
+          <div class="card card--pad">
+            <h3 class="card__title">Game and immersive development</h3>
+            <ul class="tags"><li>Unity</li><li>AR Foundation</li></ul>
+          </div>
+          <div class="card card--pad">
+            <h3 class="card__title">Creative tools</h3>
+            <ul class="tags"><li>Blender</li><li>Photoshop</li><li>Figma</li></ul>
+          </div>
+          <div class="card card--pad">
+            <h3 class="card__title">Tools</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title">Contact</h2>
+        <p>I am open to internship opportunities. Get in touch by email or find me online.</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:liewdamien22@gmail.com">liewdamien22@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/liewdamien22-a11y" target="_blank" rel="noopener noreferrer">github.com/damien22</a></li>
+          <!-- TODO: replace with your verified LinkedIn profile URL -->
+          <li>LinkedIn: <a href="www.linkedin.com/in/damien-liew-b10260378/" target="_blank" rel="noopener noreferrer">linkedin.com</a></li>
+        </ul>
+        <a class="btn btn--primary" href="assets/documents/resume.pdf" download="Damien-Liew-Resume.pdf">Download resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Damien Liew</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

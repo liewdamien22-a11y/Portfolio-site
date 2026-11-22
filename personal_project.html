@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Kunai | Damien Liew</title>
+  <meta name="description" content="Project detail page for Project Title by Damien Liew.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav__brand" href="index.html#home">Damien Liew</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="index.html#home">Home</a></li>
+        <li><a class="nav__link" href="index.html#about">About</a></li>
+        <li><a class="nav__link" href="index.html#projects">Projects</a></li>
+        <li><a class="nav__link" href="index.html#experience">Experience</a></li>
+        <li><a class="nav__link" href="index.html#skills">Skills</a></li>
+        <li><a class="nav__link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Project hero -->
+    <section class="hero" id="project-hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <!-- Status badge: use badge--progress, badge--concept or badge--design -->
+          <p class="badge badge--progress">Hiatus</p>
+          <h1 class="hero__title">Project Kunai</h1>
+          <p class="hero__text">A currently-in-hiatus personal project of mine exploring teleportation and movement mechanics in a first-person fps context</p>
+          <ul class="tags">
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Blender</li>
+          </ul>
+          <div class="hero__actions" style="margin-top: 1.5rem;">
+            <a class="btn btn--secondary" href="index.html#projects">&larr; Back to projects</a>
+          </div>
+        </div>
+        <img class="hero__photo" src="assets/images/project_kunai_render.png" alt="Main screenshot of Project Title" width="640" height="360">
+      </div>
+    </section>
+
+    <!-- 2. Overview -->
+    <section class="section section--alt" id="overview">
+      <div class="container container--narrow">
+        <h2 class="section__title">Overview</h2>
+        <ul class="about__list">
+          <li><strong>Purpose:</strong> A personal project exploring fast-paced and less convential movement mechanics in a First Person Shooter context.</li>
+          <li><strong>Why it was created:</strong> To challenge, benchmark and improve my game development skills</li>
+          <li><strong>Main goals:</strong>The main goals involved responsive and defined movement, polished teleportation mechanics and a more unique art style</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. My contributions -->
+    <section class="section" id="contributions">
+      <div class="container">
+        <h2 class="section__title">My Contributions</h2>
+        <div class="grid grid--skills" style="margin-top: 1.5rem;">
+          <div class="card card--pad">
+            <h3 class="card__title">Responsibilities</h3>
+            <p class="card__text">Personally handled all aspects, including conceptualisation, asset creation and development</p>
+          </div>
+          <div class="card card--pad">
+            <h3 class="card__title">Features </h3>
+            <ul class="about__list">
+                <li>Fast-paced movement system</li>
+                <li>Kunai-based teleportation mechanic</li>
+                <li>Custom 3D assets and animations</li>
+            </ul>
+          </div>
+          <div class="card card--pad">
+            <h3 class="card__title">Challenges </h3>
+            <ul class="about__list">
+                <li>Figuring out how to make movement feel fluid </li>
+                <li>Learning how to create, rig and animate first person models </li>
+                <li>Designing a unique art style and direction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Development process -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <h2 class="section__title">Development Process</h2>
+
+        <div class="container--narrow" style="margin-inline: 0; max-width: 760px;">
+          <h3 class="card__title">Tools and technologies</h3>
+          <ul class="tags" style="margin-bottom: 2rem;">
+            <li>Unity</li>
+            <li>Blender</li>
+            <li>Photoshop</li>
+          </ul>
+
+          <h3 class="card__title">Design and technical decisions</h3>
+          <ul class="about__list" style="margin-bottom: 2rem;">
+            <li>Inspired primarily by Ultrakill, similar movement-based FPS games and the manga BLAME!</li>
+            <li>A Focus on naturally fast movement, shying away from sprint-based movement </li>
+            <li>Exploring a throwable-anchor-based teleportation mechanic</li>
+            <li>Low poly assets and a more monochrome art style</li>
+          </ul>
+
+          <h3 class="card__title">Challenges faced</h3>
+          <ul class="about__list" style="margin-bottom: 2rem;">
+            <li>Learning how to create, rig and animate first person models </li>
+            <li>Figuring out the best implementation approach for conceptualised mechanics</li>
+            <li>Designing visually unique 3d assets</li>
+
+          </ul>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <img class="card__img js-zoom" src="assets/images/gun_model_screenshot.png" alt="Progress image 1 for Project Title" width="640" height="360" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title">Gun Model Topology</h3>
+              <p class="card__text">image showing the low-poly model and topology of the Gun, with a triangle count of 604</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img js-zoom" src="assets/images/arms_rig_screenshot.png" alt="Progress image 2 for Project Title" width="640" height="360" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title">Full Arms rig</h3>
+              <p class="card__text">The full FPS arms model and rig, with a triangle count of 3504</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img js-zoom" src="assets/images/level_mockup.png" alt="Progress image 3 for Project Title" width="640" height="360" loading="lazy">
+            <div class="card__body">
+              <h3 class="card__title">Level Mockup</h3>
+              <p class="card__text">Level Mockup to test how movement mechanics function in an environment accurate to the conceptualised scale</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Outcome & reflection -->
+    <section class="section" id="outcome">
+      <div class="container container--narrow">
+        <h2 class="section__title">Outcome &amp; Reflection</h2>
+        <ul class="about__list">
+          <li><strong>Current result:</strong> Teleportation, movement and basic shooting mechanics implemented</li>
+          <li><strong>What worked well:</strong> The current state of the implemented mechanics are in-line with concept.</li>
+          <li><strong>What I learned:</strong> The key takeaway from this project was the benchmarking of my skills, highlighting several areas for improvement</li>
+          <li><strong>Next steps:</strong> Next steps include refinement of existing mechanics and designing and modelling of modular environmental assets</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Previous / next + back -->
+    <section class="section section--alt" id="project-nav">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="btn btn--primary" href="index.html#projects">Back to projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Damien Liew</p>
+      <a href="#main">Back to top</a>
+    </div>
+  </footer>
+
+
+  <dialog class="lightbox" id="lightbox" aria-label="Expanded image">
+    <button class="lightbox__close" type="button" aria-label="Close image">&times;</button>
+    <img class="lightbox__img" src="" alt="">
+  </dialog>
+  <script src="js/script.js"></script>
+</body>
+</html>
