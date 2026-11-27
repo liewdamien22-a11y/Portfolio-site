@@ -24,18 +24,27 @@
   if (!box || typeof box.showModal !== "function") return;
   var boxImg = box.querySelector(".lightbox__img");
 
+  function open(src, alt) {
+    boxImg.src = src;
+    boxImg.alt = alt || "";
+    box.showModal();
+  }
+
+  // Images that expand when clicked
   document.querySelectorAll(".js-zoom").forEach(function (img) {
     img.setAttribute("tabindex", "0");
     img.setAttribute("role", "button");
-
-    function open() {
-      boxImg.src = img.currentSrc || img.src;
-      boxImg.alt = img.alt;
-      box.showModal();
-    }
-    img.addEventListener("click", open);
+    img.addEventListener("click", function () { open(img.currentSrc || img.src, img.alt); });
     img.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img.currentSrc || img.src, img.alt); }
+    });
+  });
+
+  // Links that open their target image in the lightbox
+  document.querySelectorAll(".js-lightbox").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      open(link.href, link.dataset.alt);
     });
   });
 
